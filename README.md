@@ -1,6 +1,6 @@
 # langdetect
 
-![npm](https://nodei.co/npm/languagedetect.png)
+![npm](https://nodei.co/npm/langdetect.png)
 
 `langdetect is a port of the [language-detection - Language Detection Library for Java](https://code.google.com/p/language-detection/) for [node.js](http://nodejs.org).
 
@@ -8,4 +8,4 @@
 
 This package can be installed via [npm](http://npmjs.org/) as follows
 
-    % npm install languagedetect
+    % npm install langdetect
