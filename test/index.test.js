@@ -1,4 +1,5 @@
 var langdetect = require('../index.js');
+var fs = require('fs');
 
 function LangProfile(name, training) {
     var profile = { "name": name, "n_words": [], "freq": {}};
@@ -57,7 +58,21 @@ var testcase = {
         detector.append_text("\u3042\u3042\u3042\u3042a");
         t.equal(detector.detect(), "ja");
         return t.done();
-    }
+    },
+
+    testBundledProfiles: function(t) {
+        var path = langdetect.bundled_profiles("profiles");
+        var stat = fs.statSync(path);
+        t.equal(stat.isDirectory(),true);
+        return t.done();
+    },
+
+    testBundledProfiles2: function(t) {
+        var path = langdetect.bundled_profiles("profiles.sm");
+        var stat = fs.statSync(path);
+        t.equal(stat.isDirectory(),true);
+        return t.done();
+    },
 };
 
 module.exports = require('nodeunit').testCase(testcase);
