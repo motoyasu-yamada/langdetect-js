@@ -7,4 +7,5 @@
 ### Installation
 
 This package can be installed via [npm](http://npmjs.org/) as follows
+
     % npm install languagedetect
