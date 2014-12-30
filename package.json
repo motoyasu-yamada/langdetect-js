@@ -1,5 +1,5 @@
 {
-  "name": "langdetect",
+  "name": "langdetect-js",
   "description": "This is a language detection library implemented in plain node.js. (aliases: language identification, language guessing). This is ported from Java langdetect project(https://code.google.com/p/language-detection/)",
   "keywords": [
     "n-gram",
@@ -7,13 +7,13 @@
     "language detection"
   ],
   "version": "0.0.0",
-  "homepage": "https://github.com/Motoyasu-Yamada-Spicysoft/langdetect",
+  "homepage": "https://github.com/Motoyasu-Yamada-Spicysoft/langdetect-js",
   "author": "Motoyasu Yamada(https://github.com/Motoyasu-Yamada-Spicysoft/",
   "contributors": [
     "Cybozu Labs (https://code.google.com/p/language-detection/)"
   ],
   "main": "index",
-  "repository": "git://github.com/Motoyasu-Yamada-Spicysoft/langdetect.git",
+  "repository": "git://github.com/Motoyasu-Yamada-Spicysoft/langdetect-js.git",
   "licenses": [
     {
       "type": "Apache License, Version 2.0",
