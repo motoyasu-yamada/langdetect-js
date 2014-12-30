@@ -2,7 +2,7 @@
 
 ![npm](https://nodei.co/npm/languagedetect.png)
 
-`langdetect is a port of the [PEAR::Text_LanguageDetect](https://code.google.com/p/language-detection/) for [node.js](http://nodejs.org).
+`langdetect is a port of the [language-detection - Language Detection Library for Java](https://code.google.com/p/language-detection/) for [node.js](http://nodejs.org).
 
 ### Installation
 
