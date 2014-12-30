@@ -60,19 +60,26 @@ var testcase = {
         return t.done();
     },
 
-    testBundledProfiles: function(t) {
+    testLoadProfiles: function(t) {
         var path = langdetect.bundled_profiles("profiles");
-        var stat = fs.statSync(path);
-        t.equal(stat.isDirectory(),true);
+        langdetect.load_profiles(path);
         return t.done();
     },
 
-    testBundledProfiles2: function(t) {
+    testLoadProfiles2: function(t) {
         var path = langdetect.bundled_profiles("profiles.sm");
-        var stat = fs.statSync(path);
-        t.equal(stat.isDirectory(),true);
+        langdetect.load_profiles(path);
         return t.done();
     },
+
+    testEmpty: function(t) {
+        var path     = langdetect.bundled_profiles("profiles");
+        var profiles = langdetect.load_profiles(path);
+        t.equal(langdetect.detect(":)", profiles), "unknown");
+        t.equal(langdetect.detect("",   profiles), "unknown");
+        return t.done();
+    }
+
 };
 
 module.exports = require('nodeunit').testCase(testcase);
